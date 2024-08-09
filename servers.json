@@ -1,0 +1,82 @@
+{
+    "servers": [
+        {
+            "name": "sample_server1",
+            "active": true,
+            "type": "member",
+            "http_port": 9080,
+            "https_port": 9440,
+            "proxies": ["test1.endpoint.test.com","test2.endpoint.test.com"],
+            "apps": [
+                {
+                    "path": "sample1",
+                    "file": "../test_war_files/SampleWebApp.war"
+                },
+                {
+                    "path": "sample2",
+                    "file": "../test_war_files/SampleWebApp2.war"
+                },
+                {
+                    "path": "sample4",
+                    "file": "../test_war_files/SampleWebApp4.war"
+                }
+            ],
+            "controller_username":"",
+            "rpc_user": ""
+        },
+        {
+            "name": "sample_server2",
+            "active": true,
+            "type": "member",
+            "http_port": 9081,
+            "https_port": 9441,
+            "proxies": [],
+            "apps": [
+                {
+                    "path": "sample1",
+                    "file": "../test_war_files/SampleWebApp.war"
+                },
+                {
+                    "path": "sample2",
+                    "file": "../test_war_files/SampleWebApp2.war"
+                }
+            ],
+            "controller_username":"",
+            "rpc_user": ""
+        },
+        {
+            "name": "sample_server3",
+            "active": true,
+            "type": "member",
+            "http_port": 9082,
+            "https_port": 9442,
+            "proxies": ["test3.endpoint.test.com","test4.endpoint.test.com"],
+            "apps": [
+                {
+                    "path": "sample1",
+                    "file": "../test_war_files/SampleWebApp.war"
+                },
+                {
+                    "path": "sample2",
+                    "file": "../test_war_files/SampleWebApp2.war"
+                },
+                {
+                    "path": "sample3",
+                    "file": "../test_war_files/SampleWebApp3.war"
+                }
+            ],
+            "controller_username":"",
+            "rpc_user": ""
+        },
+        {
+            "name": "sample_collector",
+            "active": true,
+            "type": "collector",
+            "http_port": 9083,
+            "https_port": 9331,
+            "apps": [],
+            "controller_username":"admin",
+            "rpc_user": "johnmoline"
+        }
+    ]
+}
